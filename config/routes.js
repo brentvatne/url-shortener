@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  'GET /s/:key': 'UrlController.shortcut'
 
   /***************************************************************************
   *                                                                          *
