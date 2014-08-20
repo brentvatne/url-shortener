@@ -36,8 +36,6 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'GET /s/:key': 'UrlController.shortcut'
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -47,5 +45,8 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  'GET /:key': 'UrlController.shortcut',
+  'POST /urls': 'UrlController.create'
 
 };
